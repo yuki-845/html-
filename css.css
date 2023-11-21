@@ -4,7 +4,7 @@
 }
 body {
     font-family: "hiragino-mincho-pron", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: normal;
     font-size: 1.5vw;
 }
@@ -24,9 +24,27 @@ body {
     padding: 0px 10px;
     left: 0;
     right: 0;
+    font-size: 1.7vw;
 }
-.header__title {
-    font-size: 1.4vw;
+@media (min-width: 999px) {
+    .header__inner{
+    font-size: 18px;
+    }
+}
+.catchphrase {
+    position: absolute;
+    top:30%;
+    left:73%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+    width: 44%;
+    font-size:2vw;
+    color: #000;
+}
+.header__title img {
+    width: 60%;
+    height: auto;
 }
 .header__nav ul {
     list-style-type: none;
@@ -48,14 +66,21 @@ h3 {
 }
 
 .introduction {
+    margin-top: 3vw;
     display: grid;
     place-items: center;
     
 }
+.see {
+    margin-top: 3vw;
+    font-size: 2vw;
+}
 .introduction-text {
+    margin-top: 5vw;
+    width: 42%;
     word-break: break-all;
 }
- h2 {
+h2 {
     text-align: center;
     font-family: "sheila", sans-serif;
     font-size: 5.7vw;
@@ -74,10 +99,12 @@ h3 {
     text-align: right;
 }
 .concept-main {
+    margin-top: 3vw;
     display: grid;
     place-items: center; 
 }
 .concept-inner {
+    margin-top: 5vw;
     display: flex;
     width: 84%;
 }
@@ -85,6 +112,7 @@ h3 {
     width: 50%;
 }
 .concept-right {
+    position: relative;
     width: 50%;
 }
 .concept-left img{
@@ -95,10 +123,27 @@ h3 {
     word-break: break-all;
     padding-left: 8%;
 }
-.concept-right h3 {
-    text-align: right;
+.see_more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 3.5vw;
+    font-size: 2vw;
+}
+.introduction-under {
+    margin-top: 3vw;
+}
+.introduction-under-inner {
+    margin-top: 4vw;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+    display: flex;
+    line-height: 4vw;
 }
 .contact {
+    margin-top: 3vw;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -106,7 +151,7 @@ h3 {
     background-color: #E2DBD2;
     aspect-ratio: 1244/340;
     outline: 1px solid rgb(0, 0, 0);
-	outline-offset: -1vw;
+	outline-offset: -1.7vw;
 }
 
 .contact-this {
@@ -131,15 +176,13 @@ h3 {
     text-align: center;
 }
 .footer {
+    margin-top: 3vw;
     background-color: #000;
-    aspect-ratio: 1920/320;
+    aspect-ratio: 1920/265;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 10px;
     padding: 0px 10px;
-    left: 0;
-    right: 0;
 }
 .footer-title img {
     fill: #fff;
@@ -159,4 +202,8 @@ h3 {
     
     text-decoration: none;
     color: white;
+}
+.footer-title img {
+    width: 60%;
+    height: auto;
 }
