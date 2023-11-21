@@ -141,6 +141,9 @@ h3 {
     left: 0;
     right: 0;
 }
+.footer-title img {
+    fill: #fff;
+}
 
 .footer__title {
     font-size: 1.4vw;
