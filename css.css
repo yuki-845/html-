@@ -2,6 +2,48 @@
     padding: 0;
     margin: 0;
 }
+@media (max-width: 780px) {
+.sp-menu__box {
+    position: fixed;  /* 位置を固定 */
+    top: 0;  /* 最上部 */
+    right: 0;  /* 右端 */
+    /* 中の要素を上下中央寄せ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* サイズ指定 */
+    height: 60px;
+    width: 60px;
+    /* 最前面にする */
+    z-index: 100;
+    background-color: black;
+  }
+  /* メニューの白線を疑似要素を使って3本作成 */
+  .sp-menu__box span,         /* 真ん中の線 */
+  .sp-menu__box span:before,  /* 上の線 */
+  .sp-menu__box span:after {  /* 下の線 */
+    /* contentの値を指定しないと疑似要素が生成されない */
+    content: "";
+    /* ３本線のサイズと色を指定 */
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    /* 3本線の位置は絶対位置で指定 */
+    position: absolute;
+  }
+  /* 上の線の位置 */
+  .sp-menu__box span:before {
+    /* 真ん中の線と離す距離 */
+    bottom: 8px;
+  }
+  /* 下の線の位置 */
+  .sp-menu__box span:after {
+    /* 真ん中の線と離す距離 */
+    top: 8px;
+  }
+}
 body {
     font-family: "hiragino-mincho-pron", sans-serif;
     font-weight: 200;
@@ -49,6 +91,13 @@ body {
 .header__nav ul {
     list-style-type: none;
     display: flex;
+    
+}
+@media (max-width: 780px) {
+    .header__nav ul {
+        display: none;
+    }
+    
 }
 .header__nav ul li {
     margin-left: 50px;
