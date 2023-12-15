@@ -57,8 +57,8 @@ body {
     width: 100%;
     height: auto;
 }
-.main-svg {
-    width: 60%;
+.header__title img{
+    width: 40%;
     height: auto;
 }
 .header__inner {
