@@ -57,6 +57,10 @@ body {
     width: 100%;
     height: auto;
 }
+.main-svg {
+    width: 60%;
+    height: auto;
+}
 .header__inner {
     display: flex;
     align-items: center;
